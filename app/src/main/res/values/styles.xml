@@ -15,10 +15,18 @@
         <!-- Main app theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorPrimary">@color/whiteColor</item>
         <item name="android:textColorSecondary">@color/textColorSecondary</item>
         <item name="android:divider">@color/dividerColor</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppBarOverlayMenuTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <!-- Main app theme here. -->
+        <item name="android:background">@color/dividerColor</item>
+        <item name="android:bottomRightRadius">4dp</item>
+        <item name="android:bottomLeftRadius">4dp</item>
 
     </style>
 
