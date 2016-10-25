@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/app_bar_menu_profile"
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@drawable/ic_account_circle_white"
+        android:title="Profile"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/app_bar_menu_settings"
+
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings_blue"
+        android:title="Settings"
+        android:visible="true" />
+</menu>
