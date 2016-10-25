@@ -4,7 +4,7 @@
     android:id="@+id/activity_sub"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.slidenerd.activity.SubActivity">
+    tools:context=".activity.SubActivity">
 
     <include
         android:id="@+id/app_bar"
