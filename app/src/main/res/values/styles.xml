@@ -11,7 +11,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppBarTheme" parent="Theme.AppCompat.Light">
+    <style name="AppBarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
         <!-- Main app theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -22,9 +22,11 @@
 
     </style>
 
-    <style name="AppBarOverlayMenuTheme" parent="ThemeOverlay.AppCompat.Dark">
+    <style name="AppBarOverlayMenuTheme" parent="ThemeOverlay.AppCompat.Light">
         <!-- Main app theme here. -->
-        <item name="android:background">@color/dividerColor</item>
+        <item name="android:background">@color/whiteColor</item>
+        <item name="android:textColorPrimary">@color/blackColor</item>
+        <item name="android:textColorSecondary">@color/whiteColor</item>
         <item name="android:bottomRightRadius">4dp</item>
         <item name="android:bottomLeftRadius">4dp</item>
 

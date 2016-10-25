@@ -1,5 +1,6 @@
 package com.slidenerd.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -41,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.app_bar_menu_profile:
                 Snackbar.make(rlMain, "You clicked profile", Snackbar.LENGTH_SHORT).show();
+                break;
+            case R.id.app_bar_menu_next:
+                startActivity(new Intent(this, SubActivity.class));
                 break;
             case R.id.app_bar_menu_settings:
                 Snackbar.make(rlMain, "You clicked settings", Snackbar.LENGTH_SHORT).show();
