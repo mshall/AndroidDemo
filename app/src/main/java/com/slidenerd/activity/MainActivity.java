@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-//        toolbar = (Toolbar) findViewById(R.id.app_bar);
-
+        //toolbar = (Toolbar) findViewById(R.id.app_bar);
+//
         setSupportActionBar(toolbar);
     }
 
