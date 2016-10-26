@@ -161,12 +161,8 @@ public class ProfileActivity extends AppCompatActivity {
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
 
-        // ******** code for crop image
-        intent.putExtra("crop", "true");
-        intent.putExtra("aspectX", 0);
-        intent.putExtra("aspectY", 0);
         try {
-            intent.putExtra("return-data", true);
+
             startActivityForResult(Intent.createChooser(intent, "Select File"), 1);
         } catch (ActivityNotFoundException e) {
             e.printStackTrace();
