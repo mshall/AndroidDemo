@@ -3,6 +3,7 @@ package com.slidenerd.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -10,6 +11,7 @@ import android.view.MenuItem;
 import android.widget.RelativeLayout;
 
 import com.slidenerd.R;
+import com.slidenerd.fragment.NavigationDrawerFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -20,15 +22,20 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
     @BindView(R.id.activity_main)
     RelativeLayout rlMain;
+    @BindView(R.id.drawerLayout)
+    DrawerLayout drawerLayout;
+    NavigationDrawerFragment navigationDrawerFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        //toolbar = (Toolbar) findViewById(R.id.app_bar);
-//
         setSupportActionBar(toolbar);
+        navigationDrawerFragment = (NavigationDrawerFragment) getSupportFragmentManager().findFragmentById(R.id.navigationDrawerFragment);
+        navigationDrawerFragment.setup(R.id.navigationDrawerFragment, drawerLayout, toolbar);
+
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
     }
 
     @Override
