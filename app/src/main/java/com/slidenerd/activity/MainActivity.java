@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.app_bar_menu_profile:
-                Snackbar.make(rlMain, "You clicked profile", Snackbar.LENGTH_SHORT).show();
+                startActivity(new Intent(this, ProfileActivity.class));
                 break;
             case R.id.app_bar_menu_next:
                 startActivity(new Intent(this, SubActivity.class));
